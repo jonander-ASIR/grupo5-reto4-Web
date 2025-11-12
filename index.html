@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gran Premio de Euskadi de F1 - MR-ROBOT</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container main-nav-container">
+            <a href="index.html" id="logo-link">
+                <img src="imagenes/f1-euskadi-sin.png" alt="Logo F1 Euskadi" id="logo-img">
+            </a>
+
+            <nav id="main-nav">
+                <ul>
+                    <li class="has-submenu">
+                        <a href="#">LA CARRERA</a>
+                        <ul class="submenu">
+                            <li><a href="#" class="sub-item">CIRCUITO</a></li>
+                            <li><a href="#" class="sub-item">ESCUDERÍAS</a></li>
+                            <li><a href="#" class="sub-item">HORARIOS</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">BILBAO</a>
+                        <ul class="submenu">
+                            <li><a href="#" class="sub-item">VISÍTANOS</a></li>
+                            <li><a href="#" class="sub-item">GASTRONOMÍA</a></li>
+                            <li><a href="#" class="sub-item">ALOJAMIENTO</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">ENTRADAS</a>
+                        <ul class="submenu">
+                            <li><a href="solo-carrera.html" class="sub-item">SOLO CARRERA</a></li>
+                            <li><a href="acceso.html" class="sub-item">ACCESO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sorteo.html" class="sub-item">SORTEO TRES PRIMEROS PILOTOS</a></li>
+                    <li><a href="contacto.html" class="sub-item">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="red-line"></div> 
+    </header>
+
+    <main id="main-content" class="container">
+        
+        <section id="bloque-principal">
+            <h1>Gran Premio de Euskadi de F1</h1>
+            
+            <figure class="hero-image">
+                <img src="imagenes/modelo-3D.png" alt="Gran foto de la carrera de F1 en Euskadi">
+                <figcaption>La emoción de la Formula 1 llega a Bilbao.</figcaption>
+            </figure>
+            
+            <p>El Gran Premio de Euskadi se celebrará en Bilbao por primera vez. Una cita histórica que combina la alta velocidad con la rica cultura vasca. No te pierdas la oportunidad de ver a los mejores pilotos del mundo competir en el nuevo circuito urbano.</p>
+            
+            <blockquote class="mr-robot-message">
+                MR-ROBOT: Colaboramos para impulsar el mensaje de la eliminación del motor de combustión por "motores híbridos" en el futuro.
+            </blockquote>
+
+            <h2>Patrocinadores Oficiales</h2>
+            <div class="patrocinadores">
+                <img src="imagenes/bombon.jpg" alt="Patrocinador 1" class="patrocinador-img patrocinador-first">
+                <img src="imagenes/ath-logo-color.png" alt="Patrocinador 2" class="patrocinador-img">
+            </div>
+
+            <h2>Coche de la Próxima Generación</h2>
+            <img src="imagenes/coche.jpg" alt="Coche de F1 de próxima generación" id="coche-proxima-gen">
+        </section>
+
+        <aside id="aside-lateral">
+            <div id="carrusel">
+                <h3>Momentos Destacados F1 / Bilbao</h3>
+                <div class="carrusel-item">
+                    <p id="carrusel-title">Emoción en la recta principal</p>
+                    <img id="carrusel-img" src="imagenes/recta-principal.png" alt="Carrusel">
+                </div>
+            </div>
+
+            <h3>Links de Interés</h3>
+            <ul>
+                <li><a href="#">Últimas Noticias de la F1</a></li>
+                <li><a href="#">Tienda Oficial de Merchandising</a></li>
+                <li><a href="#">Entrevistas a Pilotos</a></li>
+            </ul>
+
+            <h3>Descarga de Normativa</h3>
+            <p>
+                <a href="https://www.fia.com/sites/default/files/fia_2025_formula_1_sporting_regulations_-_issue_1_-_2024-07-31.pdf" download>Descargar Normativa F1 (PDF)</a>
+            </p>
+        </aside>
+
+    </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <p>
+                © 2024 Marca Registrada F1 y Bilbao. | 
+                <a href="#">Política de Cookies</a> | 
+                <a href="#">Política de Privacidad</a> | 
+                <a href="#">Aviso Legal</a>
+            </p>
+            <div class="social-icons">
+                <a href="#"><img src="imagenes/Facebook_Logo.png" alt="Facebook"></a>
+                <a href="#"><img src="imagenes/Instagram_icon.png" alt="Instagram"></a>
+                <a href="#"><img src="imagenes/Logo_Twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
