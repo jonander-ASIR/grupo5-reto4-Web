@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso - Gran Premio de Euskadi</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+
+    <header id="main-header">
+        <div class="container main-nav-container">
+            <a href="index.html" id="logo-link">
+                <img src="imagenes/f1-euskadi-sin.png" alt="Logo F1 Euskadi" id="logo-img">
+            </a>
+
+            <nav id="main-nav">
+                <ul>
+                    <li class="has-submenu">
+                        <a href="#">LA CARRERA</a>
+                        <ul class="submenu">
+                            <li><a href="#" class="sub-item">CIRCUITO</a></li>
+                            <li><a href="#" class="sub-item">ESCUDERÍAS</a></li>
+                            <li><a href="#" class="sub-item">HORARIOS</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">BILBAO</a>
+                        <ul class="submenu">
+                            <li><a href="#" class="sub-item">VISÍTANOS</a></li>
+                            <li><a href="#" class="sub-item">GASTRONOMÍA</a></li>
+                            <li><a href="#" class="sub-item">ALOJAMIENTO</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">ENTRADAS</a>
+                        <ul class="submenu">
+                            <li><a href="solo-carrera.html" class="sub-item">SOLO CARRERA</a></li>
+                            <li><a href="acceso.html" class="sub-item">ACCESO</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sorteo.html" class="sub-item">SORTEO TRES PRIMEROS PILOTOS</a></li>
+                    <li><a href="contacto.html" class="sub-item">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="red-line"></div> 
+    </header>
+
+<body>
+    <main id="main-content" class="container">
+        <section id="bloque-principal" class="access-main-section"> 
+            <h2>Acceso a Entradas Compradas</h2>
+
+            <div class="form-container">
+                <form id="form-acceso" action="tratarDatos.php" method="POST">
+                    
+                    <div class="form-group">
+                        <label for="usuario">Usuario:</label>
+                        <input type="text" id="usuario" name="usuario" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Contraseña:</label>
+                        <div class="password-container">
+                            <input type="password" id="password" name="password" required class="password-input">
+                            <span id="toggle-password" class="password-toggle-icon">👁️</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" id="btn-consulta">Consultar Entradas</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+        <script src="acceso.js"></script>
+</body>
+</html>
